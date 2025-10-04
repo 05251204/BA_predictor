@@ -1,0 +1,8 @@
+venv/
+
+# Pythonが自動生成するキャッシュファイル
+__pycache__/
+*.pyc
+
+# VSCodeなどのエディタ設定ファイル
+.vscode/

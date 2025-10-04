@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+  font-family: 'DotGothic16', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.card {
+  border: none;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+#character-result {
+  min-height: 100px;
+}
+
+.autoComplete_wrapper > input {
+  box-shadow: none !important;
+}
+
+.autoComplete_wrapper > ul {
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.autoComplete_wrapper > ul > li {
+  padding: 0.5rem 1rem;
+}
+
+.autoComplete_wrapper > ul > li.selected {
+  background-color: red;
+  color: white;
+}
+
+.label {
+    width: auto;
+    flex-shrink: 1;
+}
+
+.prob {
+    width: auto;
+    flex-shrink: 1;
+    margin-left: 1rem;
+    color: #6c757d;
+}
+
+#csv-output {
+  display: none;
+}

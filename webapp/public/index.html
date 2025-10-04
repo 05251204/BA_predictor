@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>戦術対抗戦ぷれでぃくたー</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- autoComplete.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.3/dist/css/autoComplete.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GYWLQZ448S"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GYWLQZ448S");
+    </script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <form id="character-form" class="mt-4">
+            <div class="row mb-3">
+              <label for="char-D1" class="col-sm-3 col-form-label"
+                >D1 (Striker)</label
+              >
+              <div class="col-sm-9 label1">
+                <input
+                  type="text"
+                  id="char-D1"
+                  class="form-control selection1"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="char-SP1" class="col-sm-3 col-form-label"
+                >SP1 (Supporter)</label
+              >
+              <div class="col-sm-9 label2">
+                <input
+                  type="text"
+                  id="char-SP1"
+                  class="form-control selection2"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="char-SP2" class="col-sm-3 col-form-label"
+                >SP2 (Supporter)</label
+              >
+              <div class="col-sm-9 label3">
+                <input
+                  type="text"
+                  id="char-SP2"
+                  class="form-control selection3"
+                  required
+                />
+              </div>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">
+                D2, D3, D4を予測
+              </button>
+            </div>
+          </form>
+          <div id="character-result" class="mt-4 p-3 border rounded bg-light">
+            ここに予測結果が表示されます。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- autoComplete.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
