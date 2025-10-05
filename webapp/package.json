@@ -9,12 +9,6 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "csv-parser": "^3.2.0",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "node-fetch": "^2.7.0"
-  },
   "start": "node server.js",
   "engines": {
     "node": "20.x"
