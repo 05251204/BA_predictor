@@ -3,10 +3,12 @@ import joblib
 import pandas as pd
 import numpy as np
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # これをインポート
 import traceback # エラーの詳細を出力するためにインポート
 
 # --- サーバー起動時の初期化処理 ---
 app = Flask(__name__)
+CORS(app)  # この行を追加して、全てのドメインからのリクエストを許可
 
 # グローバル変数としてモデルとデータを保持
 char_pipelines = None
